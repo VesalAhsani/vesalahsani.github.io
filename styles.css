@@ -113,15 +113,15 @@ nav ul li a:hover {
 }
 
 .contact-info li a[href*="linkedin"]::before {
-    content: '🔗 LinkedIn: '; /* LinkedIn emoji */
+    content: '🔗 '; /* LinkedIn emoji */
 }
 
 .contact-info li a[href*="mailto"]::before {
-    content: '✉️ Email: '; /* Email emoji */
+    content: '✉️ '; /* Email emoji */
 }
 
 .contact-info li a[href*="scholar"]::before {
-    content: '📚 Scholar: '; /* Google Scholar emoji */
+    content: '📚 '; /* Google Scholar emoji */
 }
 
 .contact-info a:hover {
