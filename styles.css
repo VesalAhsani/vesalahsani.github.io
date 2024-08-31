@@ -54,8 +54,8 @@ nav ul li a {
 }
 
 .profile-photo {
-    width: 100%;
-    border-radius: 50%;
+    width: 50%;
+    border-radius: 25%;
 }
 
 .sidebar h2 {
@@ -93,3 +93,13 @@ footer {
     border-top: 1px solid #ddd;
     margin-top: 20px;
 }
+
+.no-link-style {
+    color: black; /* Set the text color to black */
+    text-decoration: none; /* Remove the underline */
+}
+
+.no-link-style:hover {
+    color: black; /* Keep the text color black on hover */
+}
+
