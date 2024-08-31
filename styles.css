@@ -75,7 +75,7 @@ nav ul li a:hover {
     max-width: 150px;
     border-radius: 50%; /* Make profile photo circular */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
-    filter: blur(0.5px) brightness(0.9); /* Adds blur and reduces brightness for a vague effect */
+    filter: blur(0.2px) brightness(0.9); /* Adds blur and reduces brightness for a vague effect */
     transition: filter 0.3s ease; /* Smooth transition for hover effect */    
 }
 
