@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -78,7 +79,6 @@ nav ul li a:hover {
     width: 100%;
     max-width: 150px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
 
 .sidebar h2 {
@@ -101,7 +101,7 @@ nav ul li a:hover {
     transition: color 0.3s ease;
 }
 
-contact-info a:hover {
+.contact-info a:hover {
     color: #007BFF; /* Change link color on hover */
 }
 
@@ -114,12 +114,6 @@ contact-info a:hover {
 .content h3 {
     font-size: 22px;
     margin-top: 0;
-}
-
-/* Styling for Bullet Points */
-ul li {
-    line-height: 2; /* Double the line height for bullet points */
-    margin-bottom: 10px; /* Adds additional spacing between items */
 }
 
 /* Footer Styling */
