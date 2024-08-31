@@ -1,21 +1,14 @@
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
 }
 
-/* Header Styling */
 header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 .container {
@@ -32,18 +25,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Make name clickable but styled like normal text */
-h1 a.no-link-style {
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-h1 a.no-link-style:hover {
-    color: #333;
-}
-
-/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -59,20 +40,12 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #007BFF; /* Change link color on hover */
-}
-
-/* Main Content and Sidebar */
 .main-content {
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto; /* Ensure no top margin */
+    margin: 20px auto;
     width: 90%;
-    padding-top: 60px; /* Add padding to prevent overlap with fixed header */
 }
 
 .sidebar {
@@ -82,9 +55,7 @@ nav ul li a:hover {
 
 .profile-photo {
     width: 100%;
-    max-width: 150px;
-    border-radius: 50%; /* Make profile photo circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    border-radius: 50%;
 }
 
 .sidebar h2 {
@@ -95,7 +66,6 @@ nav ul li a:hover {
 .contact-info {
     list-style: none;
     padding: 0;
-    margin-top: 0; /* Ensure no margin on top */
 }
 
 .contact-info li {
@@ -105,35 +75,10 @@ nav ul li a:hover {
 .contact-info a {
     text-decoration: none;
     color: #333;
-    transition: color 0.3s ease;
 }
 
-/* Emojis for Contact Links */
-.contact-info li a:before {
-    content: '🔗 '; /* Default icon */
-}
-
-.contact-info li a[href*="linkedin"]::before {
-    content: '🔗 LinkedIn: '; /* LinkedIn emoji */
-}
-
-.contact-info li a[href*="mailto"]::before {
-    content: '✉️ Email: '; /* Email emoji */
-}
-
-.contact-info li a[href*="scholar"]::before {
-    content: '📚 Scholar: '; /* Google Scholar emoji */
-}
-
-.contact-info a:hover {
-    color: #007BFF; /* Change link color on hover */
-}
-
-/* Content Styling */
 .content {
     width: 75%;
-    padding: 0 20px;
-    margin-top: 0; /* Ensure there's no gap above the content */
 }
 
 .content h3 {
@@ -141,48 +86,10 @@ nav ul li a:hover {
     margin-top: 0;
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 20px 0;
     background-color: #f4f4f4;
     border-top: 1px solid #ddd;
     margin-top: 20px;
-}
-
-footer a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: #007BFF; /* Change link color on hover */
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        padding-top: 80px; /* Adjust padding for responsive view */
-    }
-    
-    .sidebar, .content {
-        width: 100%;
-        padding: 0;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
 }
