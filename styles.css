@@ -70,13 +70,15 @@ nav ul li a:hover {
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 80px auto 20px auto; /* Adjusted margin to account for fixed header */
+    margin: 0 auto; /* Removed margin-top to align with profile photo */
     width: 90%;
+    padding-top: 60px; /* To prevent overlap with the fixed header */
 }
 
 .sidebar {
     width: 25%;
     padding-right: 20px;
+    margin-top: 0; /* Ensure there's no gap above the sidebar */
 }
 
 .profile-photo {
@@ -131,6 +133,7 @@ nav ul li a:hover {
 .content {
     width: 75%;
     padding: 0 20px;
+    margin-top: 0; /* Ensure there's no gap above the content */
 }
 
 .content h3 {
@@ -167,7 +170,7 @@ footer a:hover {
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
-        margin-top: 20px; /* Adjusted for responsive view */
+        padding-top: 20px; /* Adjust padding for responsive view */
     }
     
     .sidebar, .content {
