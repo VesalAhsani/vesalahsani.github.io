@@ -52,6 +52,11 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Change link color on hover */
 }
 
 .main-content {
@@ -89,6 +94,28 @@ nav ul li a {
 .contact-info a {
     text-decoration: none;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Emojis for Contact Links */
+.contact-info li a:before {
+    content: '🔗 '; /* Default icon */
+}
+
+.contact-info li a[href*="linkedin"]::before {
+    content: '🔗 '; /* LinkedIn emoji */
+}
+
+.contact-info li a[href*="mailto"]::before {
+    content: '✉️ '; /* Email emoji */
+}
+
+.contact-info li a[href*="scholar"]::before {
+    content: '📚 '; /* Google Scholar emoji */
+}
+
+.contact-info a:hover {
+    color: #007BFF; /* Change link color on hover */
 }
 
 .content {
