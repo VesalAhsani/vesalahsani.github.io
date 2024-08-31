@@ -12,6 +12,10 @@ header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -66,8 +70,9 @@ nav ul li a:hover {
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px auto;
+    margin: 0 auto; /* Removed top margin to align with profile photo */
     width: 90%;
+    padding-top: 70px; /* Add padding to prevent overlap with fixed header */
 }
 
 .sidebar {
@@ -78,7 +83,8 @@ nav ul li a:hover {
 .profile-photo {
     width: 100%;
     max-width: 150px;
-    border-radius: 50%;
+    border-radius: 50%; /* Make profile photo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
 
 .sidebar h2 {
@@ -101,6 +107,23 @@ nav ul li a:hover {
     transition: color 0.3s ease;
 }
 
+/* Emojis for Contact Links */
+.contact-info li a:before {
+    content: '🔗 '; /* Default icon */
+}
+
+.contact-info li a[href*="linkedin"]::before {
+    content: '🔗 LinkedIn: '; /* LinkedIn emoji */
+}
+
+.contact-info li a[href*="mailto"]::before {
+    content: '✉️ Email: '; /* Email emoji */
+}
+
+.contact-info li a[href*="scholar"]::before {
+    content: '📚 Scholar: '; /* Google Scholar emoji */
+}
+
 .contact-info a:hover {
     color: #007BFF; /* Change link color on hover */
 }
@@ -109,6 +132,7 @@ nav ul li a:hover {
 .content {
     width: 75%;
     padding: 0 20px;
+    margin-top: 0; /* Ensure there's no gap above the content */
 }
 
 .content h3 {
@@ -139,6 +163,7 @@ footer a:hover {
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
+        padding-top: 20px; /* Adjust padding for responsive view */
     }
     
     .sidebar, .content {
