@@ -70,9 +70,9 @@ nav ul li a:hover {
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto; /* Removed top margin to align with profile photo */
+    margin: 0 auto; /* Ensure no top margin */
     width: 90%;
-    padding-top: 70px; /* Add padding to prevent overlap with fixed header */
+    padding-top: 60px; /* Add padding to prevent overlap with fixed header */
 }
 
 .sidebar {
@@ -95,6 +95,7 @@ nav ul li a:hover {
 .contact-info {
     list-style: none;
     padding: 0;
+    margin-top: 0; /* Ensure no margin on top */
 }
 
 .contact-info li {
@@ -113,15 +114,15 @@ nav ul li a:hover {
 }
 
 .contact-info li a[href*="linkedin"]::before {
-    content: '🔗 '; /* LinkedIn emoji */
+    content: '🔗 LinkedIn: '; /* LinkedIn emoji */
 }
 
 .contact-info li a[href*="mailto"]::before {
-    content: '✉️ '; /* Email emoji */
+    content: '✉️ Email: '; /* Email emoji */
 }
 
 .contact-info li a[href*="scholar"]::before {
-    content: '📚 '; /* Google Scholar emoji */
+    content: '📚 Scholar: '; /* Google Scholar emoji */
 }
 
 .contact-info a:hover {
@@ -163,7 +164,7 @@ footer a:hover {
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
-        padding-top: 20px; /* Adjust padding for responsive view */
+        padding-top: 80px; /* Adjust padding for responsive view */
     }
     
     .sidebar, .content {
