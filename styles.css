@@ -99,21 +99,29 @@ nav ul li a:hover {
     transition: color 0.3s ease;
 }
 
-/* Emojis for Contact Links */
+/* Font Awesome Icons for Contact Links */
 .contact-info li a:before {
-    content: '🔗 '; /* Default icon */
+    margin-right: 8px; /* Add space between icon and text */
 }
 
-.contact-info li a[href*="linkedin"]::before {
-    content: '🔗 '; /* LinkedIn emoji */
+.contact-info li a[href*="linkedin.com"]::before {
+    content: '\f08c'; /* LinkedIn icon */
+    font-family: 'FontAwesome';
 }
 
 .contact-info li a[href*="mailto"]::before {
-    content: '✉️ '; /* Email emoji */
+    content: '\f0e0'; /* Email icon */
+    font-family: 'FontAwesome';
 }
 
-.contact-info li a[href*="scholar"]::before {
-    content: '📚 '; /* Google Scholar emoji */
+.contact-info li a[href*="scholar.google.com"]::before {
+    content: '\f02d'; /* Google Scholar icon */
+    font-family: 'FontAwesome';
+}
+
+.contact-info li a[href*="youtube.com"]::before {
+    content: '\f167'; /* YouTube icon */
+    font-family: 'FontAwesome';
 }
 
 .contact-info a:hover {
