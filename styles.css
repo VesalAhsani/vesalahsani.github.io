@@ -22,14 +22,14 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bold;
 }
 
 /* Make name clickable but styled like normal text */
 h1 a.no-link-style {
     color: #333;
-    font-size: 48px;
+    font-size: 36px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -166,7 +166,7 @@ a.no-underline:hover {
 /* headline size override */
 h1,
 h1 a.no-link-style {
-    font-size: 48px !important;
+    font-size: 36px !important;
     font-weight: bold;
 }
 
