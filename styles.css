@@ -169,15 +169,3 @@ h1 a.no-link-style {
     font-size: 36px !important;
     font-weight: bold;
 }
-
-/*  --- GLOBAL COLOUR RESET ---  */
-body {
-    background-color: #ffffff !important;   /* pure white */
-    color: #000000 !important;              /* pure black text */
-}
-
-/* keep links readable against white but remove “visited” purple */
-a, a:visited {
-    color: #0000EE;   /* classic hyperlink blue; change if you prefer another shade */
-}
-
