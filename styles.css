@@ -145,6 +145,16 @@ footer {
     margin-top: 20px;
 }
 
+/* remove underline for selected links */
+a.no-underline {
+  text-decoration: none;
+  color: #0066cc;          /* keep a link colour for accessibility */
+}
+
+a.no-underline:hover {
+  text-decoration: underline;   /* optional: show underline only on hover */
+}
+
 /* extra breathing room between publications */
 .pub-list li {
     margin-bottom: 8px;   /* ↔ adjust 4–12px to taste */
