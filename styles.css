@@ -163,4 +163,10 @@ a.no-underline:hover {
     line-height: 1.4;     /* optional: increases within-item spacing */
 }
 
+/* headline size override */
+h1,
+h1 a.no-link-style {
+    font-size: 48px !important;
+    font-weight: bold;
+}
 
