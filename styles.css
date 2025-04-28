@@ -145,15 +145,16 @@ footer {
     margin-top: 20px;
 }
 
-/* remove underline for selected links */
-a.no-underline {
+a.no-underline,
+a.no-underline:visited {
   text-decoration: none;
-  color: #0066cc;          /* keep a link colour for accessibility */
+  color: #0066cc;
 }
 
 a.no-underline:hover {
-  text-decoration: underline;   /* optional: show underline only on hover */
+  text-decoration: underline;   /* underline only on hover */
 }
+
 
 /* extra breathing room between publications */
 .pub-list li {
@@ -161,6 +162,4 @@ a.no-underline:hover {
     line-height: 1.4;     /* optional: increases within-item spacing */
 }
 
-#about a { text-decoration: none; color: #0066cc; }
-#about a:hover { text-decoration: underline; }
 
