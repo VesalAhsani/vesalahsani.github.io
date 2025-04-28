@@ -144,3 +144,10 @@ footer {
     border-top: 1px solid #ddd;
     margin-top: 20px;
 }
+
+/* extra breathing room between publications */
+.pub-list li {
+    margin-bottom: 8px;   /* ↔ adjust 4–12px to taste */
+    line-height: 1.4;     /* optional: increases within-item spacing */
+}
+
