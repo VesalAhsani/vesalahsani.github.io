@@ -105,6 +105,11 @@ nav ul li a:hover {
     margin-right: 8px; /* Add space between icon and text */
 }
 
+.contact-info li a[href^="tel:"]::before {
+    content: '\f10b'; /* Phone icon */
+    font-family: 'FontAwesome';
+}
+
 .contact-info li a[href*="linkedin.com"]::before {
     content: '\f08c'; /* LinkedIn icon */
     font-family: 'FontAwesome';
