@@ -105,11 +105,12 @@ nav ul li a:hover {
     margin-right: 8px; /* Add space between icon and text */
 }
 
-/* Location (Font Awesome 4.x) */
 .contact-info li a.location::before {
-    content: '\f041'; /* map-marker */
-    font-family: 'FontAwesome';
+  content: '\f3c5';              /* fa-location-dot (was map-marker-alt) */
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;               /* solid */
 }
+
 
 .contact-info li a[href^="tel:"]::before {
     content: '\f10b'; /* Phone icon */
